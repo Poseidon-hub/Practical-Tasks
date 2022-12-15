@@ -78,9 +78,14 @@ int main() {
 
 	cout << "A + B: " << sumirovanie.slochit(A, B) << endl;
 
-	while (D != B) {
-		C = sumirovanie.slochit(C, A);
-		D = sumirovanie.slochit(D, "1");
+	if ((A == "0") || (B == "0")) {
+		C = "0";
+	}
+	else {
+		while (D != B) {
+			C = sumirovanie.slochit(C, A);
+			D = sumirovanie.slochit(D, "1");
+		}
 	}
 	
 
